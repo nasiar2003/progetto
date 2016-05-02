@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="360.0" prefWidth="306.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="it.tdp.polito.lab0.lab0Controller">
+   <top>
+      <VBox prefHeight="75.0" prefWidth="296.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="402.0">
+               <children>
+                  <Label alignment="CENTER" text="Lab 0 - Lista di Parole" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="296.0" spacing="5.0">
+               <children>
+                  <Label text="Parola" />
+                  <TextField fx:id="textField" prefHeight="25.0" prefWidth="193.0" />
+                  <Button fx:id="insertBtn" mnemonicParsing="false" onAction="#doInsert" text="Inserisci" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <padding>
+      <Insets left="5.0" right="5.0" />
+   </padding>
+   <center>
+      <VBox prefHeight="232.0" prefWidth="296.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textArea" editable="false" prefHeight="251.0" prefWidth="296.0" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox alignment="TOP_RIGHT" prefHeight="39.0" prefWidth="296.0" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#doCancel" text="Cancella" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
